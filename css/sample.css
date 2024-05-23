@@ -18,6 +18,7 @@ p {
 
     float: left;
     padding: 20px;
+    column-rule: 3px solid black;
     
 }
 
