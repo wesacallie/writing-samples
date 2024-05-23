@@ -15,7 +15,7 @@ p, ul {
 }
 
 .column {
-    float: right;
+    float: initial;
     padding: 15px;
     
 }
