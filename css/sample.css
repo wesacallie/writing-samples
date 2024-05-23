@@ -18,7 +18,6 @@ p {
 
     float: left;
     padding: 20px;
-    column-rule: 3px solid black;
     
 }
 
@@ -34,4 +33,11 @@ p {
     content: "";
     display: table;
     clear: both;
+}
+
+#myDIV {
+    height: 300px;
+    background-color: #FFFFFF;
+    column-count: 2;
+    column-rule: 3px solid black;
 }
