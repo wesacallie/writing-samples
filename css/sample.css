@@ -28,7 +28,7 @@ p {
 }
 
 .column.middle{
-    width: 60%; 
+    width: 55%; 
 }
 
 .row::after {
@@ -37,6 +37,6 @@ p {
     clear: both;
 }
 
-.content {
-    line-height: 0;
+ul {
+    font-family: Arial, Helvetica, sans-serif;
 }
