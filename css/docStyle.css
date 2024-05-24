@@ -15,14 +15,14 @@ p, ul {
     
 }
 
-.column.left {
+.column1 {
     width: 25%;
     background-color: #f1f1f1;
     height: 1000px;
 }
 
-.column.main{
-    width: 75%; 
+.column2{
+    width: 60%; 
 }
 
 .row::after {
