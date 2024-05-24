@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+  }
+  
+  .column {
+    padding: 10px; /* Optional: Add padding for spacing */
+  }
+  
+  .column-1,
+  .column-3 {
+    flex: 1; /* Equal width for the first and third columns */
+  }
+  
+  .column-2 {
+    flex: 2; /* Adjust this value as needed for the middle column */
+  }
+  
