@@ -27,7 +27,7 @@ p, ul {
 }
 
 .column.middle{
-    width: 800px; 
+    width: 400px; 
 }
 
 .row::after {
