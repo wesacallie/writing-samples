@@ -51,6 +51,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*added text for info */
+.info {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+  }
+
 /*style for paragraphs and ordered and unordered lists */
 p, ul, ol {
     font-family: Arial, Helvetica, sans-serif; 
