@@ -11,8 +11,7 @@ p, ul {
 /* Main column style */
 .column {
     float: left;
-    padding: 15px;
-    
+    padding: 15px; 
 }
 
 .column1 {
