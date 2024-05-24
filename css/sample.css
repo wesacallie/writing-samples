@@ -9,7 +9,7 @@ p, ul {
 }
 
 .header {
-    background-color: #f1f1f1;
+    background-color: #c1acac;
     padding: 20px;
     text-align: center;
 }
@@ -22,7 +22,7 @@ p, ul {
 
 .column1, .column3 {
     width: 20%;
-    background-color: #f1f1f1;
+    background-color: #c1acac;
     height: 1000px;
 }
 
