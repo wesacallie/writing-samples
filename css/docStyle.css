@@ -16,13 +16,13 @@ p, ul {
 }
 
 .column.side {
-    width: 22%;
+    width: 25%;
     background-color: #f1f1f1;
     height: 1000px;
 }
 
 .column.middle{
-    width: 50%; 
+    width: 75%; 
 }
 
 .row::after {
