@@ -9,7 +9,7 @@ p, ul {
 }
 
 .header {
-    background-color: #c1acac;
+    background-color: #b5b5af;
     padding: 20px;
     text-align: center;
 }
@@ -22,12 +22,12 @@ p, ul {
 
 .column1, .column3 {
     width: 20%;
-    background-color: #c1acac;
+    background-color: #b5b5af;
     height: 1000px;
 }
 
 .column.middle{
-    width: 100%; 
+    width: 60%; 
 }
 
 .row::after {
