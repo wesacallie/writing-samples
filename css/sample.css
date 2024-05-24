@@ -20,7 +20,7 @@ p, ul {
     
 }
 
-.column1.side, .column3.side {
+.column1, .column3 {
     width: 300px;
     background-color: #f1f1f1;
     height: 1000px;
