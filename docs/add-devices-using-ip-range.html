@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/docStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Other Assets</title>
+</head>
+<body>
+    <div class="header">
+        <h1></h1>
+    </div>
+    <div class="row">
+        <div class=" column column1">
+            <h2>Table of Contents</h2>
+            <ul class="toc">
+                <li><a href="add-other-assets.html">Add Other Assets</a></li>
+                <li><a href="add-other-devices-using-seed-file.html">Add Devices with Seed File</a></li>
+                <li><a href="add-devices-seed-file.html">How to Add Devices</a></li>
+                <li><a href="add-devices-modified-seed-file.html">Using Modified Seed File</a></li>
+                <li><a href="add-devices-using-ip-range.html">Add Device Using IP Range</a></li>
+                <li>Markdown</li>
+            </ul>
+        </div>
+        
+         <div class="column column2">
+            <h2>Manage Devices Using a Modified Seed File</h2>
+            <p>TTo add, modify, or delete devices using the modified seed file:</p>
+            <ol>
+                <li>Open the previously created seed file, make required changes, and save the file.&nbsp;
+                <div class="info">
+                    <p><strong>Note:</strong> To add assets to the seed file, append those assets to the previously created seed file and reload the file. This is necessary since uploading a new seed file replaces the current seed file. Only the latest uploaded seed file is used for discovery and collection.</p>
+                </div></li>
+                <li>From the <strong>Data Sources</strong> page, select a data source that has a <strong>Type</strong> of CX Cloud Agent. A details window opens with <strong>Summary</strong> and <strong>Software</strong> tabs.</li>
+
+                <img src="../images/data-sources-page.png" alt="Data Sources page">
+
+                <li>Click <strong>Download Report</strong> to generate a report on all assets for the selected data source. The report provides information on the device IP Address, Serial Number, Reachability, Command Type, Command Status, and Command Error, if applicable.</li>
+                <li>Click <strong>Replace Seed File</strong>. The CX Cloud Agent window opens.</li>
+                <li>Drag and drop the modified seed file into the window or browse to the file and add it in the window.</li>
+                <li>Click <strong>Upload</strong>.</li>
+                
+            </ol>
+                     
+        </div>
+    </div>    
+        
+</body>
+</html>
