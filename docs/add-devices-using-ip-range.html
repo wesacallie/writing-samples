@@ -27,15 +27,40 @@
             <h2>Add Devices Using IP Range</h2>
             <p>IP ranges allow users to identify hardware assets and, subsequently, collect telemetry from those devices based on IP addresses. The devices for telemetry collection can be uniquely identified by specifying a single network-level IP range, which should be scanned by CX Cloud Agent using the SNMP protocol. If the IP range is chosen to identify a directly connected device, the IP addresses that are referenced should be as restrictive as possible, while allowing coverage for all required assets.</p>
             <ul>
-                
-                <img src="../images/data-sources-page.png" alt="Data Sources page">
-
                 <li>Specific IPs can be provided, or wildcards can be used to replace octets of an IP to create a range</li>
                 <li>If a specific IP address is not included in the IP range identified during setup, CX Cloud Agent does not attempt to communicate with a device that has such an IP address, nor does it collect telemetry from such a device</li>
                 <li>Entering *.*.*.* allows CX Cloud Agent to use the user-supplied credential with any IP. For example: 172.16.*.* allows the credentials to be used for all devices in the 172.16.0.0/16 subnet</li>
                 <li>If there are any changes to the network or Installed Base (IB), the IP range can be modified</li>
             </ul>
             <p>CX Cloud Agent will attempt to connect to the devices but may not be able to process each one to show in the <strong>Assets</strong> view in cases where it is not able to determine the PIDs or Serial Numbers.</p>
+
+            <div class="info">
+                <p><strong>Notes:</strong> Clicking <strong>Edit IP Address Range</strong> initiates on-demand device discovery. When any new device is added or deleted (within or outside) for a specified IP-range, the customer must always click <strong>Edit IP Address Range</strong>.</p>
+            </div>
+
+            <p>Adding devices using an IP range requires users to specify all applicable credentials through the configuration UI. The fields visible vary depending on the protocols selected on the previous windows. If multiple selections are made for the same protocol, for example, selecting both SNMPv2c and SNMPv3 or selecting both SSHv2 and SSHv1, CX Cloud Agent automatically auto-negotiates the protocol selection based on the individual device capabilities.</p>
+            <p>When connecting devices using IP addresses, the customer should ensure all relevant protocols in the IP range along with SSH versions and Telnet credentials are valid or the connections will fail.</p>
+            <p>To add devices using the IP range:</p>
+            <ol>
+                <li>In the Configure connection to CX Cloud window, select the <strong>Provide an IP Address</strong> range option.</li>
+                <li>Complete the form with the relevant information.</li>
+                <li>Several connection options can be selected. The following screens display the configuration credentials for the options.</li>
+
+                <img src="../images/snmpv3-credentials.png" alt="connecting to CX Cloud">
+                <img src="../images/snmpv2-sshv2-sshv1-credentials.png" alt="connecting to CX Cloud">
+                <img src="../images/telenet-credentials.png" alt="connecting to CX Cloud">
+
+                <li>Enter information in the <strong>Schedule Inventory Collection</strong> section to set a time to start the inventory collection.</li>
+
+                <img src="../images/schedule-inventory-collection.png" alt="connecting to CX Cloud">
+
+                <li>Click <strong>Connect</strong>. The Data Sources window opens, displaying a confirmation message.</li>
+                <img src="../images/schedule-inventory-collection.png" alt="connecting to CX Cloud">
+
+            </ol>
+            
+
+
                      
         </div>
     </div>    
