@@ -19,13 +19,13 @@ p, ul {
 .column {
     float: left;
     padding: 15px; 
-    border-right: 6px solid black;
 }
 
 .column1 {
     width: 15%;
     background-color: #f1f1f1;
     height: 1000px;
+    border-right: 6px solid black;
 }
 
 .column2{
