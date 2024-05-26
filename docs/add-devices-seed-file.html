@@ -31,17 +31,12 @@
                 <div class="info">
                     <p><strong>Note:</strong> The link in the <strong>Configure Connection to CX Cloud</strong> window is no longer available once the initial seed file has been downloaded.</p>
                 </div></li>
+                <li>Open an Excel spreadsheet (or any preferred spreadsheet) and enter the headings as shown in the template.</li>
+                <li>Enter data manually or import data into the file.</li>
+                <li>Once complete, save the template as a .csv file to import the file into CX Cloud Agent.</li>
+                <li>In the <strong>Upload your seed file</strong> window, drag-and-drop the newly created .csv file or click <strong>browse</strong> files and navigate to the .csv file.</li>
             </ol>
-            <p>CX Cloud Agent will attempt to connect to the devices but may not be able to process each one to show in the Assets pages in cases where it is not able to determine the PIDs or Serial Numbers. Any row in the seed file that starts with a semicolon is ignored. The header row in the seed file starts with a semicolon and can be kept as is (recommended option) or deleted while creating the customer seed file.</p>
-            <p>It is important that the format of the sample seed file, including column headers, not be altered in any way. The seed file is provided in PDF format.</p>
-
-            <h2>Telemetry Processing Limitations for Devices</h2>
-            <p>The following are limitations when processing telemetry data for devices:</p>
-            <ul>
-                <li>Some devices may show as reachable in the <strong>Collection Summary</strong> but are not visible in the CX Cloud <strong>Assets</strong> page. Device instrumentation limitations prevent the processing of such device telemetry.</li>
-                <li>Telemetry attributes may be inaccurate or missing in the CX Cloud <strong>Assets</strong> page for devices that are not part of the Campus Success Track.</li>
-                <li>If a device from the seed file or IP range collections is also part of the Cisco DNA Center inventory, the device is reported only once for the Cisco DNA Center entry. The seed file/ IP range entry is not collected or processed to avoid duplication.</li>
-            </ul>
+            
           
         </div>
     </div>    
