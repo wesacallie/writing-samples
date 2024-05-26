@@ -44,3 +44,11 @@ p, ul {
     padding: 8px;
   }
 
+  table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px;
+    width: 75%
+    }
+
