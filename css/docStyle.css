@@ -67,10 +67,11 @@ a:link {
 
 a:hover {
     color: blue;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
     color: gray;
+    text-decoration: none;
 }
 
