@@ -30,7 +30,6 @@ p, ul {
 
 .column2{
     width: 70%;
-    border-left: 6px solid black; 
 }
 
 .row::after {
