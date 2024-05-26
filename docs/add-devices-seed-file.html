@@ -24,81 +24,17 @@
         </div>
         
          <div class="column column2">
-            <h2>Add Devices Using a Seed File</h2>
-            <h3>About the Seed File</h3>
-            <p>A seed file is a comma-separated values (csv) file where each line represents a system data record. In a seed file, every seed file record corresponds to a unique device from which telemetry should be collected by CX Cloud Agent. All error or information messages for each device entry from the seed file being imported are captured as part of job log details. All devices in a seed file are considered managed devices, even if the devices are unreachable at the time of initial configuration. In the event a new seed file is being uploaded to replace a previous one, the date of last upload is displayed in CX Cloud.</p>
+            <h2>How to Add Devices Using a Seed File</h2>
+            <p>To add devices using a new seed file:</p>
+            <ol>
+                <li>Download the seed file template (PDF) using the embedded link in this document (refer to <strong>About the Seed File</strong>) or through a link in the <strong>Configure Connection to CX Cloud</strong> window.$nbsp;
+                <div class="info">
+                    <p><strong>Note:</strong> The link in the <strong>Configure Connection to CX Cloud</strong> window is no longer available once the initial seed file has been downloaded.</p>
+                </div></li>
+            </ol>
             <p>CX Cloud Agent will attempt to connect to the devices but may not be able to process each one to show in the Assets pages in cases where it is not able to determine the PIDs or Serial Numbers. Any row in the seed file that starts with a semicolon is ignored. The header row in the seed file starts with a semicolon and can be kept as is (recommended option) or deleted while creating the customer seed file.</p>
             <p>It is important that the format of the sample seed file, including column headers, not be altered in any way. The seed file is provided in PDF format.</p>
 
-            <div class="info">
-                <p><strong>Notes:</strong> This PDF is for reference only and can be used to create a seed file that needs to be saved in .csv format.</p>
-            </div>
-
-            <p>The following table identifies all necessary seed file columns and the data that must be included in each column.</p>
-            <table>
-                <thead>
-                    <th>Seed File Column</th>
-                    <th>Column Header / Identifier</th>
-                    <th>Purpose of Column</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>A</td>
-                        <td>IP Address or hostname</td>
-                        <td>Provide a valid, unique IP Address or hostname of the device.</td>
-                    </tr>
-                    <tr>
-                        <td>B</td>
-                        <td>SNMP protocol version</td>
-                        <td>The SNMP protocol is required by CX Cloud Agent and is used for device discovery within the customer network. Values can be snmpv2c or snmpv3, but snmpv3 is recommended due to security considerations.</td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>snmpRo : Mandatory if col#=3 selected as 'snmpv2c'/td>
-                        <td>If the legacy variant of SNMPv2 is selected for a specific device, then snmpRO (read only) credentials for the device SNMP collection must be specified. Otherwise, entry can be blank.</td>
-                    </tr>
-                    <tr>
-                        <td>D</td>
-                        <td>snmpv3UserName : Mandatory if col#=3 selected as 'snmpv3'</td>
-                        <td>If SNMPv3 is selected to communicate with a specific device, then the respective login username must be provided.</td>
-                    </tr>
-                    <tr>
-                        <td>E</td>
-                        <td>snmpv3AuthAlgorithm : values can be MD5 or SHA</td>
-                        <td>SNMPv3 protocol permits Authentication via either the MD5 or SHA Algorithm. If the device is configured with secure Authentication, then the respective Auth Algorithm must be provided. Note: MD5 is considered insecure, and SHA should be used on all devices that support it.</td>
-                    </tr>
-                    <tr>
-                        <td>F</td>
-                        <td>snmpv3AuthPassword : password</td>
-                        <td>If either a MD5 or a SHA cryptographic algorithm is configured on the device, then the relevant Authentication password needs to be provided for device access.</td>
-                    </tr>
-                    <tr>
-                        <td>G</td>
-                        <td>snmpv3PrivAlgorithm : values can be DES , 3DES</td>
-                        <td>If the device is configured with the SNMPv3 privacy algorithm (this algorithm is used to encrypt the response), then the respective Algorithm needs to be provided.&nbsp;
-                        <div class="info">
-                            <p><strong>Note:</strong> 56-bit keys used by DES are considered too short to provide cryptographic security, and that 3DES should be used on all devices that support it.</p>
-                        </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>H</td>
-                        <td>snmpv3PrivPassword : password</td>
-                        <td>If the SNMPv3 privacy algorithm is configured on the device, then its respective privacy password needs to be provided for device connection.</td>
-                    </tr>
-                    <tr>
-                        <td>I</td>
-                        <td>snmpv3EngineId : engineID, unique ID representing device, specify engine ID if manually configured on device</td>
-                        <td>The SNMPv3 EngineID is a unique ID representing each device. This engine ID is sent as a reference while collecting the SNMP datasets by CX Cloud Agent. If the customer configures the EngineID manually, then the respective EngineID needs to be provided.</td>
-                    </tr>
-                    <tr>
-                        <td>J</td>
-                        <td>cliProtocol: values can be 'telnet', 'sshv1', 'sshv2'. If empty will set to 'sshv2' by default</td>
-                        <td>The CLI is intended to interact with the device directly. CX Cloud Agent uses this protocol for CLI collection for a specific device. This CLI collection data is used for Assets and other Insights Reporting within CX Cloud. SSHv2 is recommended; absent other network security measures, in themselves SSHv1 and Telnet protocols do not provide adequate transport security.</td>
-                    </tr>
-                </tbody>
-            </table>  
-            
             <h2>Telemetry Processing Limitations for Devices</h2>
             <p>The following are limitations when processing telemetry data for devices:</p>
             <ul>
