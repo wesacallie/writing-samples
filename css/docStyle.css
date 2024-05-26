@@ -60,3 +60,17 @@ table {
     border-collapse: collapse;
 }
 
+a:link {
+    text-decoration: none;
+    color: rgb(34, 90, 128);
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
