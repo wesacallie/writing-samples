@@ -73,14 +73,18 @@
                         <td>SNMPv3 protocol permits Authentication via either the MD5 or SHA Algorithm. If the device is configured with secure Authentication, then the respective Auth Algorithm must be provided. Note: MD5 is considered insecure, and SHA should be used on all devices that support it.</td>
                     </tr>
                     <tr>
-                        <td>A</td>
-                        <td>IP Address or hostname</td>
-                        <td>Provide a valid, unique IP Address or hostname of the device.</td>
+                        <td>F</td>
+                        <td>snmpv3AuthPassword : password</td>
+                        <td>If either a MD5 or a SHA cryptographic algorithm is configured on the device, then the relevant Authentication password needs to be provided for device access.</td>
                     </tr>
                     <tr>
-                        <td>A</td>
-                        <td>IP Address or hostname</td>
-                        <td>Provide a valid, unique IP Address or hostname of the device.</td>
+                        <td>G</td>
+                        <td>snmpv3PrivAlgorithm : values can be DES , 3DES</td>
+                        <td>If the device is configured with the SNMPv3 privacy algorithm (this algorithm is used to encrypt the response), then the respective Algorithm needs to be provided.&nbsp;
+                        <div class="info">
+                            <p><strong>Note:</strong> 56-bit keys used by DES are considered too short to provide cryptographic security, and that 3DES should be used on all devices that support it.</p>
+                        </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>A</td>
