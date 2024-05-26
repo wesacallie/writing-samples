@@ -26,21 +26,16 @@
          <div class="column column2">
             <h2>Add Devices Using IP Range</h2>
             <p>IP ranges allow users to identify hardware assets and, subsequently, collect telemetry from those devices based on IP addresses. The devices for telemetry collection can be uniquely identified by specifying a single network-level IP range, which should be scanned by CX Cloud Agent using the SNMP protocol. If the IP range is chosen to identify a directly connected device, the IP addresses that are referenced should be as restrictive as possible, while allowing coverage for all required assets.</p>
-            <ol>
-                <li>Open the previously created seed file, make required changes, and save the file.&nbsp;
-                <div class="info">
-                    <p><strong>Note:</strong> To add assets to the seed file, append those assets to the previously created seed file and reload the file. This is necessary since uploading a new seed file replaces the current seed file. Only the latest uploaded seed file is used for discovery and collection.</p>
-                </div></li>
-                <li>From the <strong>Data Sources</strong> page, select a data source that has a <strong>Type</strong> of CX Cloud Agent. A details window opens with <strong>Summary</strong> and <strong>Software</strong> tabs.</li>
-
+            <ul>
+                
                 <img src="../images/data-sources-page.png" alt="Data Sources page">
 
-                <li>Click <strong>Download Report</strong> to generate a report on all assets for the selected data source. The report provides information on the device IP Address, Serial Number, Reachability, Command Type, Command Status, and Command Error, if applicable.</li>
-                <li>Click <strong>Replace Seed File</strong>. The CX Cloud Agent window opens.</li>
-                <li>Drag and drop the modified seed file into the window or browse to the file and add it in the window.</li>
-                <li>Click <strong>Upload</strong>.</li>
-                
-            </ol>
+                <li>Specific IPs can be provided, or wildcards can be used to replace octets of an IP to create a range</li>
+                <li>If a specific IP address is not included in the IP range identified during setup, CX Cloud Agent does not attempt to communicate with a device that has such an IP address, nor does it collect telemetry from such a device</li>
+                <li>Entering *.*.*.* allows CX Cloud Agent to use the user-supplied credential with any IP. For example: 172.16.*.* allows the credentials to be used for all devices in the 172.16.0.0/16 subnet</li>
+                <li>If there are any changes to the network or Installed Base (IB), the IP range can be modified</li>
+            </ul>
+            <p>CX Cloud Agent will attempt to connect to the devices but may not be able to process each one to show in the <strong>Assets</strong> view in cases where it is not able to determine the PIDs or Serial Numbers.</p>
                      
         </div>
     </div>    
