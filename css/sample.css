@@ -33,8 +33,9 @@ p, ul {
 }
 
 .column.middle{
-    width: 50%; 
+    width: 60%; 
     float: left;
+    padding: 15px;
 }
 
 .column3 {
