@@ -18,7 +18,7 @@ p, ul {
     text-align: center;
 }
 
-.column1, .column3 {
+.column1 {
     width: 20%;
     background-color: #cfcfcb;
     height: 1000px;
@@ -29,6 +29,14 @@ p, ul {
 .column.middle{
     width: 50%; 
     float: left;
+}
+
+.column3 {
+    width: 20%;
+    background-color: #cfcfcb;
+    height: 1000px;
+    fload: left;
+    padding: 15px;
 }
 
 .row::after {
