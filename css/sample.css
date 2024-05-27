@@ -18,20 +18,16 @@ p, ul {
     text-align: center;
 }
 
-.column {
-    float: left;
-    padding: 15px;
-    
-}
-
 .column1, .column3 {
     width: 20%;
     background-color: #cfcfcb;
     height: 1000px;
+    fload: left;
 }
 
 .column.middle{
-    width: 55%; 
+    width: 60%; 
+    float: left;
 }
 
 .row::after {
