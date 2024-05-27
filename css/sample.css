@@ -53,10 +53,7 @@ p, ul {
 .img-container img {
     width: 60%;
     padding: 10px;
+    float: left;
 }
 
-.float-image {
-    float: left;
-    width: 20%;
-}
 
