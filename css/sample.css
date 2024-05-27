@@ -23,6 +23,7 @@ p, ul {
     background-color: #cfcfcb;
     height: 1000px;
     fload: left;
+    padding: 15px;
 }
 
 .column.middle{
