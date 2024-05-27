@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-.row::after {
+/*.row::after {
     content: "";
     clear: both;
     display: table;
-}
+}*/
 
 h1, h2, h3, h4 {
     color:rgb(34, 90, 128);
