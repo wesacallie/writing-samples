@@ -29,7 +29,7 @@ p, ul {
     background-color: #cfcfcb;
     height: 1000px;
     float: left;
-    padding: 15px;
+    padding-left: 25px;
 }
 
 .column.middle{
@@ -43,7 +43,7 @@ p, ul {
     background-color: #cfcfcb;
     height: 1000px;
     float: left;
-    padding: 15px;
+    padding-left: 25px;
 }
 
 
