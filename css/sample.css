@@ -55,3 +55,8 @@ p, ul {
     padding: 10px;
 }
 
+.float-image {
+    float: left;
+    width: 20%;
+}
+
