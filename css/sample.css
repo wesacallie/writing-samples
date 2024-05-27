@@ -32,7 +32,7 @@ p, ul {
 
 .row::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
 }
 
