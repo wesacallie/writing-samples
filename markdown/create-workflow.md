@@ -23,3 +23,23 @@ Select the same entity from the **New Workflow Template** drop-down list. You wi
 
 **Note:** The **Label** name must be unique for each entity. However, you can have the same label name for a different entity. For example, two templates can both be named “Tasks” if the templates were associated with different entity types.
 
+## Enabling a Workflow
+
+An Enabled template is a template that is available to be started either through the automatic process of selecting the **Start this workflow when <Entity Name> objects are created** setting on the workflow **Properties** tab, or manually through the **Creating a Start Workflow** menu for the **Tasks** toolbar feature.
+
+To enable a workflow, select the **Workflow Templates** tab. Highlight the workflow that you want to enable. Click ![ ](images/overflow-menu.png) and then select **Enable workflow template**. The value in the Enabled column changes from ‘No’ to ‘Yes’. You can also right-click a workflow and select **Enable workflow template** from the pop-up menu.
+
+A workflow template that is enabled runs when an instance of its entity is created.
+
+## Prompting Users at Task Completion
+
+Users can be prompted for information at the completion of a workflow task. This gives workflows administrators flexibility when designing workflows to match the operational requirements of their consumers. For example, a user might be asked to add comments to a field or to update a field value before completing a task.
+
+When this feature is configured, a dialog box appears when users click a task action. This feature enables users to provide additional information or update existing information before the task is complete.
+
+Here is an example of what a dialog box might look like.
+
+![ ](images/task-details.png)
+
+When the user clicks **Save**, that task is completed and any changes that were made to the object are saved. If you set required fields in the page, these fields need to be completed before the task can be completed.
+
