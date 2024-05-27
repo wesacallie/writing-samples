@@ -27,11 +27,10 @@ p, ul {
     padding: 20px;
 }
 
-.column.middle{
+.middle{
     width: 60%; 
     float: left;
     padding: 15px;
-    text-align: left;
 }
 
 .column3 {
