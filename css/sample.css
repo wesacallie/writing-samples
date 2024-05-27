@@ -28,7 +28,7 @@ p, ul {
     width: 20%;
     background-color: #cfcfcb;
     height: 1000px;
-    fload: left;
+    float: left;
     padding: 15px;
 }
 
@@ -41,13 +41,9 @@ p, ul {
     width: 20%;
     background-color: #cfcfcb;
     height: 1000px;
-    fload: left;
+    float: left;
     padding: 15px;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
 
