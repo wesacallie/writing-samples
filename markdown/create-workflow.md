@@ -15,3 +15,11 @@ You can also right-click an element already in the workspace to display an eleme
 5. Add properties to your workflow elements.
 6. Click ![ ](images/save-icon.png) to save the workflow. Workflows must be valid to be saved.
 
+You can also create multiple workflows for a single entity. Follow the preceding instructions to create your first workflow. When you create the second workflow, the steps are the same as creating a single workflow, except the workflow Label must be unique.
+
+Select the same entity from the **New Workflow Template** drop-down list. You will notice that the **Label** field in the New workflow template window has been prepopulated with the name of the first workflow you created, incremented by 1. For example, if you named your first workflow “Cars Workflow” for the “Cars” entity, the next time you create a workflow for the “Cars” entity, the **Label** will be prepopulated with the name “Cars Workflow 1”. Each successive name is incremented by 1 unless you change the name from the default name.
+
+![ ](images/workflow-increments.png)
+
+**Note:** The **Label** name must be unique for each entity. However, you can have the same label name for a different entity. For example, two templates can both be named “Tasks” if the templates were associated with different entity types.
+
