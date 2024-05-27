@@ -48,11 +48,14 @@ p, ul {
 
 .img-container {
     display: flex;
-}
-
-.img-container img {
     width: 60%;
     padding: 30px;
 }
+
+
+/*img-container img {
+    width: 60%;
+    padding: 30px;
+}*/
 
 
